@@ -1,0 +1,317 @@
+/*A quick way to give two elements the same property is to write a style with
+multiple selectors separated by a comma.*/
+
+body, html {
+    background-color: #f6f6f6;
+}
+
+@keyframes animationOne {
+    0% {
+        top:0px;
+        transform: rotate(90deg);
+    }
+    25%{
+      background-color: blue;
+    }
+    100% {
+      top: 290px;
+    }
+}
+
+@keyframes animationTwo {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25%{
+      background-color: red;
+    }
+    100% {
+        left: 250px;
+        top: 45px;
+    }
+}
+
+@keyframes animationThree {
+    0% {
+        top:0px;
+        left: 0px;
+        transform: rotate(90deg);
+    }
+    25%{
+      background-color: blue;
+    }
+    100% {
+        top: 140px;
+        left: -300px;
+    }
+}
+
+@keyframes animationFour {
+    0% {
+      left: 0px;
+    }
+    25%{
+      background-color: red;
+    }
+    100% {
+      left: 100px;
+    }
+}
+
+@keyframes animationFive {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    25%{
+      background-color: blue;
+    }
+    100% {
+        left: -190px;
+        top: -10px;
+    }
+}
+
+@keyframes animationSix {
+    0% {
+        left: 0;
+    }
+    25%{
+      background-color: red;
+    }
+    100% {
+        left: 220px;
+    }
+}
+
+/* Rainbow effect animation Referenced: https://codepen.io/beben-koben/pen/gfuvc */
+@-webkit-keyframes rainbow {
+  0% {background-color: #ff0000;}
+  10% {background-color: #ff8000;}
+  20% {background-color: #ffff00;}
+  30% {background-color: #80ff00;}
+  40% {background-color: #00ff00;}
+  50% {background-color: #00ff80;}
+  60% {background-color: #00ffff;}
+  70% {background-color: #0080ff;}
+  80% {background-color: #0000ff;}
+  90% {background-color: #8000ff;}
+  100% {background-color: #ff0080;}
+}
+
+/*This is the white-ish surface that we will fill with boxes, rows, and columns*/
+
+#painting {
+    background-color: #fff4db;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 1px #8d8d8d;
+}
+
+/*These are the rows that will divide the the painting into three horizontal sections*/
+
+#toprow {
+    position: relative;
+    height: 300px;
+}
+
+#middlerow {
+    position: relative;
+}
+
+#bottomrow {
+    position: relative;
+    height: 100px;
+
+}
+
+.column1{
+    float: left;
+    width: 110px;
+}
+
+.column2{
+    float: left;
+    width: 290px;
+    height: 100px;
+}
+
+
+/*These are the boxes that give the painting its shape, including the black dividers*/
+
+#bigbox {
+    position: relative;
+    background-color: red;
+    width: 290px;
+    height: 290px;
+    left: 110px;
+    float: left;
+}
+
+
+/*Rainbow effect animation that carries on infinitely*/
+.bigbox:hover{
+  -webkit-animation: rainbow 1s infinite;
+}
+.tinybox:hover  {
+  -webkit-animation: rainbow 1s infinite;
+}
+
+.smallbox:hover{
+  -webkit-animation: rainbow 1s infinite;
+}
+
+/*Changing button size and font size */
+.chickBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.snoopBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.rainbowBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+div.snoopDogg{
+    content: url("../images/SnoopDogg.gif");
+    display: none;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    float: left;
+}
+
+div.rainbowToad{
+    display: none;
+    width:100px;
+    height:100px;
+    position: relative;
+    float: left;
+    content: url("../images/rainbowToad.gif");
+}
+
+div.chickenGuy{
+    display: none;
+    width:100px;
+    height:100px;
+    position: relative;
+    float: left;
+    content: url("../images/ChickenGuy.gif");
+}
+
+
+.smallbox {
+    width:100px;
+    height:100px;
+    background-color: blue;
+    position: relative;
+    float: left;
+}
+
+.tinybox {
+    width:20px;
+    height:45px;
+    position: relative;
+    float: left;
+    left: 270px;
+    top: 55px;
+}
+
+.divider1 {
+    position: relative;
+    height: 10px;
+    width: 400px;
+    background-color: black;
+    top: 290px;
+    -webkit-animation: animationOne 3s infinite;
+}
+
+.divider2 {
+    background-color: black;
+    position: relative;
+    height: 100px;
+    width: 10px;
+    left: 100px;
+    -webkit-animation: animationFour 3s infinite;
+}
+
+.divider3 {
+    background-color: black;
+    float: left;
+    position: relative;
+    height: 10px;
+    width: 20px;
+    left: 250px;
+    top: 45px;
+    -webkit-animation: animationTwo 3s infinite;
+}
+
+.divider4 {
+    background-color: black;
+    position: relative;
+    float: left;
+    height: 290px;
+    width: 10px;
+    left: -190px;
+    top: -10px;
+    -webkit-animation: animationFive 3s infinite;
+}
+
+
+
+.divider5 {
+    background-color: black;
+    float: left;
+    position: relative;
+    height: 10px;
+    width: 100px;
+    top: 140px;
+    left: -300px;
+    -webkit-animation: animationThree 3s infinite;
+}
+.divider6 {
+    background-color: black;
+    float: left;
+    position: relative;
+    height: 100px;
+    width: 10px;
+    left: 220px;
+    -webkit-animation: animationSix 3s infinite;
+}
+
+/*color classes. These are the CSS classes that will color in the blocks*/
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black
+}
+
+/*position class. This class helps make sure the elements line up next to each other*/
+
+.right {
+
+
+}

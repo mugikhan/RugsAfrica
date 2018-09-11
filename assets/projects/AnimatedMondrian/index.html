@@ -1,0 +1,103 @@
+<!-- Project example borrowed from the Google Coder Project -->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>CSS_Mondrian</title>
+    <link rel="stylesheet" type="text/css" href="css/mondrianCSS.css">
+</head>
+
+<body>
+        <!-- Creates buttons to display and hide images and call mouseover functions -->
+        <button onclick="SnoopDogg()" onmouseover="snoopChangeGreen()" onmouseout="snoopChangeBlank()" class="snoopBtn" id="snoopBtn">Snoop</button>
+        <button onclick="RainbowToad()" onmouseover="toadChangeGreen()" onmouseout="toadChangeBlank()" class="rainbowBtn" id="rainbowBtn">Rainbow</button>
+        <button onclick="ChickenGuy()" onmouseover="chickChangeGreen()" onmouseout="chickChangeBlank()" class="chickBtn" id="chickBtn">Chicken</button>
+        <div id="painting">
+
+            <div id="toprow">
+                <div id="bigbox" class="bigbox red">
+                    <div class="snoopDogg"></div>
+                </div>
+                <div class="divider1"> </div>
+                <div class="divider4"> </div>
+                <div class="divider5"> </div>
+            </div>
+
+            <div id="bottomrow">
+                <div class="column1">
+                    <div id="smallbox" class="smallbox blue">
+                        <div class="rainbowToad"></div>
+                        <div class="chickenGuy"></div>
+                    </div>
+                    <div class="divider2"> </div>
+                </div>
+                <div class="column2">
+                    <div class="tinybox yellow"> </div>
+                    <div class="divider3"> </div>
+                    <div class="divider6"></div>
+                </div>
+            </div>
+    </div>
+
+
+    <script>
+    /* Javascript Code for displaying and hiding images on button press */
+      function SnoopDogg(){
+        var x = document.getElementById("bigbox").getElementsByClassName("snoopDogg")[0];
+        if(x.style.display == "none"){
+          x.style.display = "block";
+        }
+        else{
+          x.style.display = "none";
+        }
+      }
+
+      function RainbowToad(){
+          var x = document.getElementById("bottomrow").getElementsByClassName("column1")[0];
+          var y = x.getElementsByClassName("smallbox")[0].getElementsByClassName("rainbowToad")[0];
+          if(y.style.display == "none"){
+              y.style.display = "block";
+          }
+          else{
+              y.style.display = "none";
+          }
+      }
+
+      function ChickenGuy(){
+          var x = document.getElementById("bottomrow").getElementsByClassName("column1")[0];
+          var y = x.getElementsByClassName("smallbox")[0].getElementsByClassName("chickenGuy")[0];
+          if(y.style.display == "none"){
+              y.style.display = "block";
+          }
+          else{
+              y.style.display = "none";
+          }
+      }
+      /*Changes color on hover and on exit */
+      function snoopChangeGreen(){
+        document.getElementById("snoopBtn").style.color = "#00EF40";
+      }
+
+      function snoopChangeBlank(){
+        document.getElementById("snoopBtn").style.color = "red";
+      }
+
+      function toadChangeGreen(){
+        document.getElementById("rainbowBtn").style.color = "#00EF40";
+      }
+
+      function toadChangeBlank(){
+        document.getElementById("rainbowBtn").style.color = "red";
+      }
+
+      function chickChangeGreen(){
+        document.getElementById("chickBtn").style.color = "#00EF40";
+      }
+
+      function chickChangeBlank(){
+        document.getElementById("chickBtn").style.color = "red";
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+html,
+body,
+header,
+#intro,
+#introContact,
+#introThanks{
+    font-family: sans-serif, Roboto;
+}
+
+html,
+body,
+header{
+    font-family: sans-serif, Roboto;
+}
+
+@media only screen and (min-width: 601px){
+
+    #navRow{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    #navSearchBar{
+        margin: 0 !important;
+        padding: 0 0 0 10px;
+    }
+
+    .navSearch{
+        width: 400px !important;
+    }
+
+    .input-group.md-form.form-sm.form-1 input{
+        border: 1px solid #bdbdbd;
+        background-color: white;
+    }
+
+    .nav-item{
+        padding: 0 10px 0 0;
+        width: 100px;
+    }
+
+    .nav-item a{
+        width: inherit;
+        text-align: center;
+    }
+
+    .nav-item p{
+        text-align: center;
+    }
+
+    #navbarMain{
+        text-align: center;
+        background-color: transparent;
+    }
+
+    #navbarMain svg{
+        color: #888;
+    }
+
+    #navbarMain span{
+        color: #888;
+    }
+
+    #navbarMain a:hover svg{ 
+        color: #FF0000; 
+    }
+
+    .fa-stack-2x{
+        color: white;
+    }
+
+    #wishlistItems{
+        padding: .25rem 0 0 0;
+    }
+
+    #cartItems{
+        padding: 1px 0 0 .5rem;
+    }
+
+    #selling-points-container{
+        padding: 10px 0 20px 0;
+    }
+
+    #selling-point-circle{
+        color: #888;
+    }
+
+    .selling-point-text{
+        padding: 0 0 0 10px;
+    }
+
+
+.gameBoxMain{
+    width: 100%;
+    border: 2px solid rgba(255, 152, 0, 0.7);
+}
+
+.gameBox{
+    width: 75%;
+    border: 2px solid rgba(255, 152, 0, 0.7);
+}
+
+.gamePic{
+    width: 100%;
+}
+
+#portfolioPic{
+  width: 20vw;
+  height: 20vw;
+}
+
+#profilePicHead{
+  width: 50px;
+  height: 50px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.page-footer{
+  background-color: rgba(255, 152, 0, 0.7);
+}
+
+#contactInfo{
+    font-size: 150%;
+    color: #0d0d0d;
+}
+
+#contactHeading{
+    color: #0d0d0d;
+}
+
+.contactInfoDiv{
+    padding: 20px;
+}
+
+.about {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 150%;
+    color: #0d0d0d;
+}
+
+.about img {
+    margin-right: 15px;
+    float: left;
+}
+
+.socialIconsFooter>li{
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.socialIcon{
+    color: #0d0d0d;
+}
+
+.socialIconNav{
+    color: white;
+}
+
+.col{
+  text-align: center;
+}
+
+.gameContent{
+    height: 90%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255,255,255,1);
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+}
+
+@media only screen and (max-width: 601px){
+
+    #navSearchBar{
+        margin: 0 !important;
+    }
+
+    .navSearch{
+        width: 300px !important;
+    }
+
+    .input-group.md-form.form-sm.form-1 input{
+        border: 1px solid #bdbdbd;
+    }
+
+    #navbarMain{
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .nav-item{
+        padding: 0 5px 0 0;
+    }
+
+    #navbarMain svg{
+        color: #888;
+    }
+
+    #navbarMain span{
+        color: #888;
+    }
+
+    #navbarMain a:hover svg{ 
+        color: #FF0000; 
+    }
+
+    .fa-stack-2x{
+        color: white;
+    }
+}
