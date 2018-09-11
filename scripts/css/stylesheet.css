@@ -80,6 +80,10 @@ header{
         padding: 1px 0 0 .5rem;
     }
 
+    .productsRow{
+        padding: 50px 0 0 0;
+    }
+
     #selling-points-container{
         padding: 40px 0 20px 0;
     }
@@ -107,37 +111,12 @@ header{
         margin: 0 !important;
     }
 
-
-.gameBoxMain{
-    width: 100%;
-    border: 2px solid rgba(255, 152, 0, 0.7);
-}
-
-.gameBox{
-    width: 75%;
-    border: 2px solid rgba(255, 152, 0, 0.7);
-}
-
-.gamePic{
-    width: 100%;
-}
-
-#portfolioPic{
-  width: 20vw;
-  height: 20vw;
-}
-
-#profilePicHead{
-  width: 50px;
-  height: 50px;
-}
-
-.img-circle {
-    border-radius: 50%;
-}
+    .fa-twitter-square, .fa-facebook-square, .fa-instagram{
+        margin: 0 20px 20px 0;
+    }
 
 .page-footer{
-  background-color: rgba(255, 152, 0, 0.7);
+  background-color: #888;
 }
 
 #contactInfo{
@@ -159,40 +138,11 @@ header{
     overflow: hidden;
     font-size: 150%;
     color: #0d0d0d;
+    text-align: center;
 }
 
-.about img {
-    margin-right: 15px;
-    float: left;
-}
 
-.socialIconsFooter>li{
-    float: left;
-    padding-left: 5%;
-    padding-top: 5%;
-}
 
-.socialIcon{
-    color: #0d0d0d;
-}
-
-.socialIconNav{
-    color: white;
-}
-
-.col{
-  text-align: center;
-}
-
-.gameContent{
-    height: 90%;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: rgba(255,255,255,1);
-    overflow-y: scroll;
-    overflow-x: auto;
-}
 
 }
 
