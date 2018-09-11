@@ -37,6 +37,8 @@ header{
     .nav-item{
         padding: 0 10px 0 0;
         width: 100px;
+        text-align: center;
+        display: inline-block;
     }
 
     .nav-item a{
@@ -57,8 +59,9 @@ header{
         color: #888;
     }
 
-    #navbarMain span{
+    #navbarMain p{
         color: #888;
+        text-align: center;
     }
 
     #navbarMain a:hover svg{ 
@@ -78,7 +81,7 @@ header{
     }
 
     #selling-points-container{
-        padding: 10px 0 20px 0;
+        padding: 40px 0 20px 0;
     }
 
     #selling-point-circle{
@@ -87,6 +90,21 @@ header{
 
     .selling-point-text{
         padding: 0 0 0 10px;
+    }
+
+    .card-img-top{
+        height: 250px;
+    }
+
+    .card-text-original{
+        color: #888;
+        text-decoration: line-through;
+        margin: 0 !important;
+    }
+
+    .card-text-sale{
+        color: red;
+        margin: 0 !important;
     }
 
 

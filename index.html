@@ -37,30 +37,32 @@
 					</a>
 				</div>
 				<div class="col-lg-4">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false"
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
 						aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="" id="navbarMain">		
+					<div class="collapse navbar-collapse" id="navbarMain">		
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a href="URL-HERE" title="Account" target="_blank" rel="nofollow"><i class="fas fa-user fa-2x"></i><span>Account</span></a>
+								<div class="nav-item-wrapper">
+									<a href="URL-HERE" title="Account" target="_blank" rel="nofollow"><i class="fas fa-user fa-2x"></i><p>Account</p></a>
+								</div>
 							</li>
 							<li class="nav-item">
 								<a href="URL-HERE" title="Wishlist" target="_blank" rel="nofollow">
-									<span class="fas fa-heart fa-2x"></span>
-									<strong class="fa-stack-2x" id="wishlistItems">
-										2    
-									</strong>
-									<span>Wishlist</span></a>
+										<span class="fas fa-heart fa-2x"></span>
+										<strong class="fa-stack-2x" id="wishlistItems">
+											2    
+										</strong>
+										<p>Wishlist</p></a>
 							</li>
 							<li class="nav-item">
 								<a href="URL-HERE" title="Cart" target="_blank" rel="nofollow">
-										<span class="fa-layers fa-fw">
-												<i class="fas fa-shopping-cart fa-2x"></i>
-												<span class="fa-layers-text" data-fa-transform="right-11 up-2" style="color: white; text-align: center">2</span>
-											  </span>
-									<p>Cart</p>
+									<span class="fas fa-shopping-cart fa-2x"></span>
+									<strong class="fa-stack-2x" id="cartItems">
+										2    
+									</strong>
+									<p>Cart</p></a>
 								</a>
 							</li>
 						</ul>
@@ -100,7 +102,7 @@
 
 <main role="main" class="mt-5">
 
-	<div class="container">
+	<div class="container-fluid">
 		<hr class="my-5">
 		<!--Section: HomePage-->
 		<section id="HomePage" class="text-center">
@@ -123,7 +125,7 @@
 				<div class="col-lg-4">
 						<span class="fa-layers fa-fw">
 							<i class="fas fa-circle fa-2x" id="selling-point-circle"></i>
-							<i class="fas fa-dollar-sign fa-inverse" data-fa-transform="right-6"></i>
+							<i class="fab fa-yandex fa-inverse" data-fa-transform="right-6 flip-h"></i>
 						</span>
 						<span class="selling-point-text">LOW PRICE COMMITMENT</span>
 				</div>
@@ -132,74 +134,78 @@
 			<div class="row">
 				<!--Grid column-->
 				<div class="col-lg-4 col-md-12 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain">
-						<img src="assets/images/penguinRunnerLogo.png" class="img-fluid gamePic" alt="">
-						<div class="mask rgba-white-slight"></div>
+					<!-- Card -->
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
+							<a href="#!">
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+						<!-- Card content -->
+						<div class="card-body">
+							<!-- Title -->
+							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
+							<!-- Text -->
+							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
+							<!-- Button -->
+							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
+						</div>
 					</div>
-					<h4 class="my-4 font-weight-bold">PENGUIN RUNNER</h4>
-					<a class="btn btn-outline-orange btnGame" role="button" id="game1">More Info<i class="fas fa-info ml-2"></i></i></i></a>
+					<!-- Card -->
 				</div>
 				<!--Grid column-->
 
-				<!--Grid column-->
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain" id=2>
-						<img src="assets/images/mondrian.jpg" class="img-fluid gamePic" alt="">
-						<div class="mask rgba-white-slight"></div>
-					</div>
-					<h4 class="my-4 font-weight-bold">Animated Mondrian</h4>
-					<a class="btn btn-outline-orange btnGame" role="button" id="game2">More Info<i class="fas fa-info ml-2"></i></i></i></a>
-				</div>
-				<!--Grid column-->
-
-				<!--Grid column-->
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain" id=3>
-						<img src="assets/images/dayNight.jpg" class="img-fluid gamePic" alt="">
-						<div class="mask rgba-white-slight"></div>
-					</div>
-					<h4 class="my-4 font-weight-bold">Day and Night</h4>
-					<a class="btn btn-outline-orange btnGame" role="button" id="game3">More Info<i class="fas fa-info ml-2"></i></i></i></a>
-				</div>
-				<!--Grid column-->
-			</div>
-			<!--Grid row-->
-
-			<!--Grid row-->
-			<div class="row">
 				<!--Grid column-->
 				<div class="col-lg-4 col-md-12 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain" id=4>
-						<img src="assets/images/graySquare.jpg" class="img-fluid gamePic" alt="" >
-						<div class="mask rgba-white-slight"></div>
+					<!-- Card -->
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
+							<a href="#!">
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+						<!-- Card content -->
+						<div class="card-body">
+							<!-- Title -->
+							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
+							<!-- Text -->
+							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
+							<!-- Button -->
+							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
+						</div>
 					</div>
-					<h4 class="my-3 font-weight-bold">Coming Soon</h4>
-					<a class="btn btn-outline-orange btnGame disabled" role="button" id="game4">More Info<i class="fas fa-info ml-2"></i></i></i></a>
+					<!-- Card -->
 				</div>
 				<!--Grid column-->
 
 				<!--Grid column-->
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain" id=5>
-						<img src="assets/images/graySquare.jpg" class="img-fluid gamePic" alt="">
-						<div class="mask rgba-white-slight"></div>
+				<div class="col-lg-4 col-md-12 mb-4">
+					<!-- Card -->
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
+							<a href="#!">
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+						<!-- Card content -->
+						<div class="card-body">
+							<!-- Title -->
+							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
+							<!-- Text -->
+							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
+							<!-- Button -->
+							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
+						</div>
 					</div>
-					<h4 class="my-4 font-weight-bold">Coming Soon</h4>
-					<a class="btn btn-outline-orange btnGame disabled" role="button" id="game5">More Info<i class="fas fa-info ml-2"></i></i></i></a>
+					<!-- Card -->
 				</div>
 				<!--Grid column-->
-
-				<!--Grid column-->
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="view overlay z-depth-1-half wow animated fadeInRight gameBoxMain" id="6">
-						<img src="assets/images/graySquare.jpg" class="img-fluid gamePic" alt="">
-						<div class="mask rgba-white-slight"></div>
-					</div>
-					<h4 class="my-4 font-weight-bold">Coming Soon</h4>
-					<a class="btn btn-outline-orange btnGame disabled" role="button" id="game6">More Info<i class="fas fa-info ml-2"></i></i></i></a>
-				</div>
-				<!--Grid column-->
-			</div>
 			<!--Grid row-->
 		</section>
 	</div>
