@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="scripts/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="scripts/css/mdb.min.css">
 	<link rel="stylesheet" type="text/css" href="scripts/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="scripts/css/jPayPalCart.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -104,6 +105,14 @@
 
 	<div class="container-fluid">
 		<hr class="my-5">
+		<div class="row" id="topRow">
+			<div class="col-lg-6">
+				<button type="button" class="btn btn-primary" id="getProductsBtn">GET</button>
+			</div>
+			<div class="col-lg-6">
+				<div id="myCart"></div>
+			</div>
+		</div>
 		<!--Section: HomePage-->
 		<section id="HomePage" class="text-center">
 			<!-- Heading -->
@@ -125,9 +134,9 @@
 							<!-- Title -->
 							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
 							<!-- Text -->
-							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
+							<p class="card-text-original">R8999</p><p class="card-text-sale">R5999</p>
 							<!-- Button -->
-							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
+							<button class="btn btn-outline-black waves-effect addToCartBtn">ADD TO CART</button>
 						</div>
 					</div>
 					<!-- Card -->
@@ -245,9 +254,15 @@
 				<!--First column-->
 				<div class="col">
 					<div class="about">
-						<i class="fab fa-twitter-square fa-2x"></i>
-						<i class="fab fa-facebook-square fa-2x"></i>
-						<i class="fab fa-instagram fa-2x"></i>
+						<a href="URL-HERE" title="Twitter" target="_blank" rel="nofollow">
+							<i class="fab fa-twitter-square fa-2x"></i>
+						</a>
+						<a href="URL-HERE" title="Twitter" target="_blank" rel="nofollow">
+							<i class="fab fa-facebook-square fa-2x"></i>
+						</a>
+						<a href="URL-HERE" title="Twitter" target="_blank" rel="nofollow">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
 						<h3 class="text-uppercase">ABOUT</h3>
 						<p>
 							Rugs Africa
@@ -273,6 +288,7 @@
 <script type="text/javascript" src="scripts/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="scripts/js/bootstrap.min.js"> </script>
 <script type="text/javascript" src="scripts/js/mdb.min.js"> </script>
+<script type="text/javascript" src="scripts/js/jPayPalCart.min.js"> </script>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts/myScript.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->

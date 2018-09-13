@@ -14,6 +14,9 @@ header{
 }
 
 @media only screen and (min-width: 601px){
+    #topRow{
+        padding: 100px 0 0 0;
+    }
 
     #navRow{
         width: 100%;
@@ -27,6 +30,10 @@ header{
 
     .navSearch{
         width: 400px !important;
+    }
+
+    .navSearch:focus{
+        border-bottom: #888 !important;
     }
 
     .input-group.md-form.form-sm.form-1 input{
@@ -141,6 +148,9 @@ header{
     text-align: center;
 }
 
+footer.page-footer a{
+    color: black !important;
+}
 
 
 
