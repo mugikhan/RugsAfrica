@@ -25,11 +25,11 @@ header{
 
     #navSearchBar{
         margin: 0 !important;
-        padding: 0 0 0 10px;
     }
 
     .navSearch{
-        width: 400px !important;
+        box-shadow: none !important;
+        background-color: lightgrey !important;
     }
 
     .navSearch:focus{
@@ -41,20 +41,24 @@ header{
         background-color: white;
     }
 
+    .waves-input-wrapper{
+        width: 90%;
+    }
+
     .nav-item{
-        padding: 0 10px 0 0;
-        width: 100px;
-        text-align: center;
+        padding: 0 50px 0 0;
         display: inline-block;
+        text-align: left;
     }
 
-    .nav-item a{
-        width: inherit;
-        text-align: center;
+    .page-links{
+        font-size: 20px;
+        line-height: 40px;
+        color: lightgrey;
     }
 
-    .nav-item p{
-        text-align: center;
+    .page-links:hover{
+        color: #FF0000;
     }
 
     #navbarMain{
@@ -93,6 +97,7 @@ header{
 
     #selling-points-container{
         padding: 40px 0 20px 0;
+        text-align: center;
     }
 
     #selling-point-circle{
@@ -104,53 +109,92 @@ header{
     }
 
     .card-img-top{
-        height: 250px;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto !important;
     }
 
-    .card-text-original{
+    .card-body{
+        text-align: center;
+    }
+
+    .card-text{
+        text-align: center;
+    }
+
+    .original-price{
         color: #888;
         text-decoration: line-through;
-        margin: 0 !important;
+        margin: 0 20px 0 0 !important;
+        text-align: center;
+
     }
 
-    .card-text-sale{
+    .card-text-price{
         color: red;
         margin: 0 !important;
+        text-align: center;
     }
 
     .fa-twitter-square, .fa-facebook-square, .fa-instagram{
         margin: 0 20px 20px 0;
     }
 
-.page-footer{
-  background-color: #888;
-}
+    .social-links-footer {
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+        font-size: 150%;
+        color: lightgrey;
+        text-align: center;
+    }
 
-#contactInfo{
-    font-size: 150%;
-    color: #0d0d0d;
-}
+    .social-links-footer a{
+        color: lightgrey !important;
+    }
 
-#contactHeading{
-    color: #0d0d0d;
-}
+    .social-links-footer a:hover{
+        color: #FF0000 !important;
+    }
 
-.contactInfoDiv{
-    padding: 20px;
-}
+    .page-links-footer{
+        font-size: 20px;
+        line-height: 40px;
+        color: lightgrey !important;
+    }
 
-.about {
-    width: 100%;
-    padding: 20px;
-    overflow: hidden;
-    font-size: 150%;
-    color: #0d0d0d;
-    text-align: center;
-}
+    .page-links-footer:hover{
+        color: #FF0000 !important;
+    }
 
-footer.page-footer a{
-    color: black !important;
-}
+    .image-source-link {
+        color: #98C3D1;
+    }
+
+    .mfp-with-zoom .mfp-container,
+    .mfp-with-zoom.mfp-bg {
+        opacity: 0;
+        -webkit-backface-visibility: hidden;
+        /* ideally, transition speed should match zoom duration */
+        -webkit-transition: all 0.3s ease-out; 
+        -moz-transition: all 0.3s ease-out; 
+        -o-transition: all 0.3s ease-out; 
+        transition: all 0.3s ease-out;
+    }
+
+    .mfp-with-zoom.mfp-ready .mfp-container {
+            opacity: 1;
+    }
+    .mfp-with-zoom.mfp-ready.mfp-bg {
+            opacity: 0.8;
+    }
+
+    .mfp-with-zoom.mfp-removing .mfp-container, 
+    .mfp-with-zoom.mfp-removing.mfp-bg {
+        opacity: 0;
+    }
 
 
 
@@ -158,33 +202,72 @@ footer.page-footer a{
 
 @media only screen and (max-width: 601px){
 
+    #topRow{
+        padding: 100px 0 0 0;
+    }
+
+    #navRow{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    .navbar-brand{
+        padding: 0 0 0 15px;
+    }
+
     #navSearchBar{
         margin: 0 !important;
+        padding: 0 0 0 10px;
+        width: 100%;
     }
 
     .navSearch{
-        width: 300px !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        background-color: lightgrey !important;
+    }
+
+    .navSearch:focus{
+        border-bottom: #888 !important;
     }
 
     .input-group.md-form.form-sm.form-1 input{
         border: 1px solid #bdbdbd;
+        background-color: white;
     }
 
-    #navbarMain{
-        text-align: left;
-        background-color: transparent;
+    .waves-input-wrapper{
+        width: 85%;
     }
 
     .nav-item{
-        padding: 0 5px 0 0;
+        padding: 0 0 0 15px;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .page-links{
+        font-size: 20px;
+        line-height: 40px;
+        color: lightgrey;
+    }
+
+    .page-links:hover{
+        color: #FF0000;
+    }
+
+    #navbarMain{
+        text-align: center;
+        background-color: transparent;
     }
 
     #navbarMain svg{
         color: #888;
     }
 
-    #navbarMain span{
+    #navbarMain p{
         color: #888;
+        text-align: center;
     }
 
     #navbarMain a:hover svg{ 
@@ -193,5 +276,117 @@ footer.page-footer a{
 
     .fa-stack-2x{
         color: white;
+    }
+
+    #wishlistItems{
+        padding: .25rem 0 0 0;
+    }
+
+    #cartItems{
+        padding: 1px 0 0 .5rem;
+    }
+
+    .productsRow{
+        padding: 80px 0 0 0;
+    }
+
+    #selling-points-container{
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+
+    #selling-point-circle{
+        color: #888;
+    }
+
+    .selling-point-text{
+        padding: 0 0 0 10px;
+    }
+
+    .card-img-top{
+        height: 200px;
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-body{
+        text-align: center;
+    }
+
+    .card-text{
+        text-align: center;
+    }
+
+    .original-price{
+        color: #888;
+        text-decoration: line-through;
+        margin: 0 20px 0 0 !important;
+        text-align: center;
+
+    }
+
+    .card-text-price{
+        color: red;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .fa-twitter-square, .fa-facebook-square, .fa-instagram{
+        margin: 0 20px 20px 0;
+    }
+
+    .social-links-footer {
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+        font-size: 150%;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    .social-links-footer a{
+        color: lightgrey !important;
+    }
+
+    .social-links-footer a:hover{
+        color: #FF0000 !important;
+    }
+
+    .page-links-footer{
+        font-size: 20px;
+        line-height: 40px;
+        color: lightgrey !important;
+    }
+
+    .page-links-footer:hover{
+        color: #FF0000 !important;
+    }
+
+    .image-source-link {
+        color: #98C3D1;
+    }
+
+    .mfp-with-zoom .mfp-container,
+    .mfp-with-zoom.mfp-bg {
+        opacity: 0;
+        -webkit-backface-visibility: hidden;
+        /* ideally, transition speed should match zoom duration */
+        -webkit-transition: all 0.3s ease-out; 
+        -moz-transition: all 0.3s ease-out; 
+        -o-transition: all 0.3s ease-out; 
+        transition: all 0.3s ease-out;
+    }
+
+    .mfp-with-zoom.mfp-ready .mfp-container {
+            opacity: 1;
+    }
+    .mfp-with-zoom.mfp-ready.mfp-bg {
+            opacity: 0.8;
+    }
+
+    .mfp-with-zoom.mfp-removing .mfp-container, 
+    .mfp-with-zoom.mfp-removing.mfp-bg {
+        opacity: 0;
     }
 }

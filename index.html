@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="scripts/css/mdb.min.css">
 	<link rel="stylesheet" type="text/css" href="scripts/css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="scripts/css/jPayPalCart.css">
+	<link rel="stylesheet" type="text/css" href="scripts/css/magnific-popup.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -30,21 +31,23 @@
 </head>
 <body>
 <header>
-	<nav class="navbar navbar-expand-lg navbar-dark grey lighten-3 fixed-top scrolling-navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark blue-grey darken-4 fixed-top scrolling-navbar">
 		<div class="container-fluid">
-			<div class="row" id="navRow">
-				<div class="col-4"><a class="navbar-brand" >
+			<div class="row align-middle" id="navRow">
+				<div class="col-lg-4">
+					<a class="navbar-brand" href="index.html">
 						<img src="http://www.rugsafrica.com/wp-content/uploads/2018/04/logo.png" height="30" alt="">
 					</a>
 				</div>
 				<div class="col-lg-4">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
+					<button class="navbar-toggler float" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
 						aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarMain">		
 						<ul class="navbar-nav">
-							<li class="nav-item">
+							<!--Future Accounts and Cart-->
+							<!--<li class="nav-item">
 								<div class="nav-item-wrapper">
 									<a href="URL-HERE" title="Account" target="_blank" rel="nofollow"><i class="fas fa-user fa-2x"></i><p>Account</p></a>
 								</div>
@@ -65,39 +68,29 @@
 									</strong>
 									<p>Cart</p></a>
 								</a>
+							</li>-->
+							<li class="nav-item">
+								<a href="about.html" title="About Us" rel="nofollow" class="page-links">ABOUT US</a>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" title="Contact Us" rel="nofollow" class="page-links">CONTACT US</a>
+							</li>
+							<li class="nav-item">
+								<a href="faq.html" title="FAQ" rel="nofollow" class="page-links">FAQ</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-lg-4">
 					<div class="input-group md-form form-sm form-1" id="navSearchBar">
-						<input class="form-control my-0 py-1 navSearch" type="text" placeholder="Search" aria-label="Search">
+						<input class="form-control navSearch" type="text" placeholder="Search" aria-label="Search">
 						<div class="input-group-append">
-							<span class="input-group-text grey lighten-3" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+							<span class="input-group-text lightgrey" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
 						</div>
 					</div>
 				</div>	
 			</div>
 		</div>
-		<!-- FUTURE LINKS IN NAVBAR if needed
-		<div class="collapse navbar-collapse" id="navbarLinks">		
-				<ul class="navbar-nav">
-					<li class="nav-item">
-							<a href="URL-HERE" title="Account" target="_blank" rel="nofollow">SALE</a>
-					</li>
-					<li class="nav-item">
-							<a href="URL-HERE" title="Wishlist" target="_blank" rel="nofollow"></a>
-					</li>
-					<li class="nav-item">
-							<a href="URL-HERE" title="Cart" target="_blank" rel="nofollow"><span class="fas fa-shopping-cart fa-2x"></span>
-								<strong class="fa-stack-2x" id="cartItems">
-										2    
-								</strong>
-								<span>Cart</span></a>
-					</li>
-				</ul>
-		</div>
-	-->
 	</nav>
 </header>
 
@@ -105,141 +98,283 @@
 
 	<div class="container-fluid">
 		<hr class="my-5">
-		<div class="row" id="topRow">
+		<!--<div class="row" id="topRow">
 			<div class="col-lg-6">
 				<button type="button" class="btn btn-primary" id="getProductsBtn">GET</button>
 			</div>
 			<div class="col-lg-6">
 				<div id="myCart"></div>
 			</div>
-		</div>
+		</div>-->
 		<!--Section: HomePage-->
-		<section id="HomePage" class="text-center">
+		<section id="HomePage">
 			<!-- Heading -->
 			<!--Grid row-->
 			<div class="row productsRow">
 				<!--Grid column-->
-				<div class="col-lg-3 col-md-12 mb-4">
+				<div class="col-lg-3 col-6 mb-4">
 					<!-- Card -->
 					<div class="card">
 						<!-- Card image -->
 						<div class="view overlay">
-							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
-							<a href="#!">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<!-- Card content -->
-						<div class="card-body">
-							<!-- Title -->
-							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
-							<!-- Text -->
-							<p class="card-text-original">R8999</p><p class="card-text-sale">R5999</p>
-							<!-- Button -->
-							<button class="btn btn-outline-black waves-effect addToCartBtn">ADD TO CART</button>
-						</div>
-					</div>
-					<!-- Card -->
-				</div>
-				<!--Grid column-->
-
-				<!--Grid column-->
-				<div class="col-lg-3 col-md-12 mb-4">
-					<!-- Card -->
-					<div class="card">
-						<!-- Card image -->
-						<div class="view overlay">
-							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
-							<a href="#!">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<!-- Card content -->
-						<div class="card-body">
-							<!-- Title -->
-							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
-							<!-- Text -->
-							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
-							<!-- Button -->
-							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
-						</div>
-					</div>
-					<!-- Card -->
-				</div>
-				<!--Grid column-->
-
-				<!--Grid column-->
-				<div class="col-lg-3 col-md-12 mb-4">
-					<!-- Card -->
-					<div class="card">
-						<!-- Card image -->
-						<div class="view overlay">
-							<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
-							<a href="#!">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<!-- Card content -->
-						<div class="card-body">
-							<!-- Title -->
-							<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
-							<!-- Text -->
-							<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
-							<!-- Button -->
-							<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
-						</div>
-					</div>
-					<!-- Card -->
-				</div>
-				<!--Grid column-->
-
-				<!--Grid column-->
-				<div class="col-lg-3 col-md-12 mb-4">
-						<!-- Card -->
-						<div class="card">
-							<!-- Card image -->
-							<div class="view overlay">
-								<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg" alt="Card image cap">
-								<a href="#!">
-									<div class="mask rgba-white-slight"></div>
+							<div class="zoom-gallery">
+								<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+									<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
 								</a>
+							</div>
+						</div>
+						<!-- Card content -->
+						<div class="card-body">
+							<!-- Title -->
+							<h4 class="card-title h4-responsive">Karachi Bokhara Red 6M Runner</h4>
+							<!-- Text -->
+							<div class="card-text">
+								<p>Made in Pakistan</p>
+								<p>100% Wool</p>
+								<p>Authentic Hand-Knotted</p>
+								<p>Dimensions in CM: 600cm x 78cm</p>
+							</div>
+							<p class="card-text-price"><span class="original-price">R8 999</span>R5 999</p>
+						</div>
+					</div>
+					<!-- Card -->
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-6 mb-4">
+					<!-- Card -->
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+								<div class="zoom-gallery">
+									<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+										<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+									</a>
+								</div>
 							</div>
 							<!-- Card content -->
 							<div class="card-body">
 								<!-- Title -->
-								<h4 class="card-title">Karachi Bokhara Red 6M Runner</h4>
+								<h4 class="card-title h4-responsive">Karachi Bokhara Red 5M Runner</h4>
 								<!-- Text -->
-								<p class="card-text-original">R8,999</p><p class="card-text-sale">R5,999</p>
-								<!-- Button -->
-								<a href="#" class="btn btn-outline-black waves-effect">ADD TO CART</a>
+								<div class="card-text">
+									<p>Made in Pakistan</p>
+									<p>100% Wool</p>
+									<p>Authentic Hand-Knotted</p>
+									<p>Dimensions in CM: 500cm x 78cm</p>
+								</div>
+								<p class="card-text-price"><span class="original-price">R7 500</span>R4 999</p>
+						</div>
+					</div>
+					<!-- Card -->
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-6 mb-4">
+					<!-- Card -->
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+								<div class="zoom-gallery">
+									<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+										<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+									</a>
+								</div>
+							</div>
+							<!-- Card content -->
+							<div class="card-body">
+								<!-- Title -->
+								<h4 class="card-title">Karachi Bokhara Red 4M Runner</h4>
+								<!-- Text -->
+								<div class="card-text">
+									<p>Made in Pakistan</p>
+									<p>100% Wool</p>
+									<p>Authentic Hand-Knotted</p>
+									<p>Dimensions in CM: 400cm x 78cm</p>
+								</div>
+								<p class="card-text-price"><span class="original-price">R6 500</span>R3 999</p>
+						</div>
+					</div>
+					<!-- Card -->
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-6 mb-4">
+						<!-- Card -->
+						<div class="card">
+							<!-- Card image -->
+						<div class="view overlay">
+								<div class="zoom-gallery">
+									<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+										<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+									</a>
+								</div>
+							</div>
+							<!-- Card content -->
+							<div class="card-body">
+								<!-- Title -->
+								<h4 class="card-title">Karachi Bokhara Red 3M Runner</h4>
+								<!-- Text -->
+								<div class="card-text">
+									<p>Made in Pakistan</p>
+									<p>100% Wool</p>
+									<p>Authentic Hand-Knotted</p>
+									<p>Dimensions in CM: 300cm x 78cm</p>
+								</div>
+								<p class="card-text-price"><span class="original-price">R5 500</span>R2 999</p>
+						</div>
+						</div>
+						<!-- Card -->
+					</div>
+					<!--Grid column-->
+			</div>
+			<!--Grid row-->
+			<!--Grid Row-->
+			<div class="row productsRow">
+				<!--Grid column-->
+				<div class="col-lg-3 col-6 mb-4">
+						<!-- Card -->
+						<div class="card">
+							<!-- Card image -->
+							<div class="view overlay">
+								<div class="zoom-gallery">
+									<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/272004.jpeg" title="xD" style="width:300px;height:300px;">
+										<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/272004-300x300.jpeg">
+									</a>
+								</div>
+							</div>
+							<!-- Card content -->
+							<div class="card-body">
+								<!-- Title -->
+								<h4 class="card-title">Karachi Bokhara Red 2.5M Runner</h4>
+								<!-- Text -->
+								<div class="card-text">
+									<p>Made in Pakistan</p>
+									<p>100% Wool</p>
+									<p>Authentic Hand-Knotted</p>
+									<p>Dimensions in CM: 250cm x 78cm</p>
+								</div>
+								<p class="card-text-price"><span class="original-price">R5 000</span>R2 799</p>
 							</div>
 						</div>
 						<!-- Card -->
 					</div>
 					<!--Grid column-->
-				</div>
-			<!--Grid row-->
+	
+					<!--Grid column-->
+					<div class="col-lg-3 col-6 mb-4">
+						<!-- Card -->
+						<div class="card">
+							<!-- Card image -->
+							<div class="view overlay">
+									<div class="zoom-gallery">
+										<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+											<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+										</a>
+									</div>
+								</div>
+								<!-- Card content -->
+								<div class="card-body">
+									<!-- Title -->
+									<h4 class="card-title">Karachi Bokhara Red 5M Runner</h4>
+									<!-- Text -->
+									<div class="card-text">
+										<p>Made in Pakistan</p>
+										<p>100% Wool</p>
+										<p>Authentic Hand-Knotted</p>
+										<p>Dimensions in CM: 500cm x 78cm</p>
+									</div>
+									<p class="card-text-price"><span class="original-price">R7 500</span>R4 999</p>
+							</div>
+						</div>
+						<!-- Card -->
+					</div>
+					<!--Grid column-->
+	
+					<!--Grid column-->
+					<div class="col-lg-3 col-6 mb-4">
+						<!-- Card -->
+						<div class="card">
+							<!-- Card image -->
+							<div class="view overlay">
+									<div class="zoom-gallery">
+										<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+											<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+										</a>
+									</div>
+								</div>
+								<!-- Card content -->
+								<div class="card-body">
+									<!-- Title -->
+									<h4 class="card-title">Karachi Bokhara Red 4M Runner</h4>
+									<!-- Text -->
+									<div class="card-text">
+										<p>Made in Pakistan</p>
+										<p>100% Wool</p>
+										<p>Authentic Hand-Knotted</p>
+										<p>Dimensions in CM: 400cm x 78cm</p>
+									</div>
+									<p class="card-text-price"><span class="original-price">R6 500</span>R3 999</p>
+							</div>
+						</div>
+						<!-- Card -->
+					</div>
+					<!--Grid column-->
+	
+					<!--Grid column-->
+					<div class="col-lg-3 col-6 mb-4">
+							<!-- Card -->
+							<div class="card">
+								<!-- Card image -->
+							<div class="view overlay">
+									<div class="zoom-gallery">
+										<a href="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179.jpg" title="xD" style="width:300px;height:300px;">
+											<img class="card-img-top" src="https://www.rugsafrica.com/wp-content/uploads/2018/04/48179-300x300.jpg">
+										</a>
+									</div>
+								</div>
+								<!-- Card content -->
+								<div class="card-body">
+									<!-- Title -->
+									<h4 class="card-title">Karachi Bokhara Red 3M Runner</h4>
+									<!-- Text -->
+									<div class="card-text">
+										<p>Made in Pakistan</p>
+										<p>100% Wool</p>
+										<p>Authentic Hand-Knotted</p>
+										<p>Dimensions in CM: 300cm x 78cm</p>
+									</div>
+									<p class="card-text-price"><span class="original-price">R5 500</span>R2 999</p>
+							</div>
+							</div>
+							<!-- Card -->
+						</div>
+						<!--Grid column-->
+			</div>
 			<div class="row" id="selling-points-container">
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-12 mb-3">
 							<span class="fa-layers fa-fw">
 								<i class="fas fa-circle fa-2x" id="selling-point-circle"></i>
 								<i class="fab fa-yandex fa-inverse" data-fa-transform="right-6 flip-h"></i>
 							</span>
 							<span class="selling-point-text">LOW PRICE COMMITMENT</span>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-12 mb-3">
 							<span class="fa-layers fa-fw">
 								<i class="fas fa-circle fa-2x" id="selling-point-circle"></i>
 								<i class="fas fa-phone fa-inverse" data-fa-transform="right-6"></i>
 							</span>
 							<span class="selling-point-text">EASY RETURNS</span>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-12 mb-3">
 							<span class="fa-layers fa-fw">
 								<i class="fas fa-circle fa-2x" id="selling-point-circle"></i>
 								<i class="fas fa-truck fa-inverse" data-fa-transform="right-6"></i>
 							</span>
-							<span class="selling-point-text">FREE SHIPPING</span>
+							<span class="selling-point-text">FREE SHIPPING IN SOUTH AFRICA</span>
 					</div>
 				</div>
 		</section>
@@ -247,13 +382,13 @@
 	<!--Section: Examples-->
 
 	<!--Footer-->
-	<footer class="page-footer text-center text-md-left font-small pt-4 mt-4">
+	<footer class="page-footer text-center blue-grey darken-4 pt-4 mt-4">
 		<!--Footer Links-->
 		<div class="container-fluid text-center text-md-left">
 			<div class="row">
 				<!--First column-->
-				<div class="col">
-					<div class="about">
+				<div class="col-lg-12">
+					<div class="social-links-footer">
 						<a href="URL-HERE" title="Twitter" target="_blank" rel="nofollow">
 							<i class="fab fa-twitter-square fa-2x"></i>
 						</a>
@@ -263,10 +398,8 @@
 						<a href="URL-HERE" title="Twitter" target="_blank" rel="nofollow">
 							<i class="fab fa-instagram fa-2x"></i>
 						</a>
-						<h3 class="text-uppercase">ABOUT</h3>
-						<p>
-							Rugs Africa
-						</p>
+						<h3 class="text-uppercase">Rugs Africa</h3>
+						<a href="privacy.html" title="Privacy Policy" rel="nofollow" class="page-links-footer">Privacy policy</a>
 					</div>
 				</div>
 				<!--/.First column-->
@@ -289,10 +422,10 @@
 <script type="text/javascript" src="scripts/js/bootstrap.min.js"> </script>
 <script type="text/javascript" src="scripts/js/mdb.min.js"> </script>
 <script type="text/javascript" src="scripts/js/jPayPalCart.min.js"> </script>
+<script type="text/javascript" src="scripts/js/jquery.magnific-popup.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts/myScript.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116403138-1"></script>
 
 </body>
 </html>

@@ -1,0 +1,58 @@
+@media only screen and (min-width: 601px){
+
+    #AboutUs{
+        padding: 20px 0 0 25px;
+    }
+
+    .about-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .about-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .core-values-heading{
+        font-weight: 700;
+        color: #666;
+    }
+
+    .core-values-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 601px){
+
+    #AboutUs{
+        padding: 100px 0 0 25px;
+        color: #666;
+    }
+
+    .about-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .about-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .core-values-heading{
+        font-weight: 700;
+        color: #666;
+    }
+
+    .core-values-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
+}
