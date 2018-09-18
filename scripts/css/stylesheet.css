@@ -27,12 +27,12 @@ header{
         margin: 0 !important;
     }
 
-    .navSearch{
+    .nav-search{
         box-shadow: none !important;
         background-color: lightgrey !important;
     }
 
-    .navSearch:focus{
+    .nav-search:focus{
         border-bottom: #888 !important;
     }
 
@@ -91,8 +91,12 @@ header{
         padding: 1px 0 0 .5rem;
     }
 
+    #HomePage{
+        padding-top: 30px;
+    }
+
     .productsRow{
-        padding: 50px 0 0 0;
+        padding: 1.5rem 0 0 0;
     }
 
     #selling-points-container{
@@ -221,13 +225,13 @@ header{
         width: 100%;
     }
 
-    .navSearch{
+    .nav-search{
         width: 100% !important;
         box-shadow: none !important;
         background-color: lightgrey !important;
     }
 
-    .navSearch:focus{
+    .nav-search:focus{
         border-bottom: #888 !important;
     }
 
@@ -286,8 +290,12 @@ header{
         padding: 1px 0 0 .5rem;
     }
 
+    #HomePage{
+        padding-top: 90px;
+    }
+
     .productsRow{
-        padding: 80px 0 0 0;
+        padding: 1.5rem 0 0 0;
     }
 
     #selling-points-container{
@@ -321,7 +329,7 @@ header{
     .original-price{
         color: #888;
         text-decoration: line-through;
-        margin: 0 20px 0 0 !important;
+        margin: 0 10px 0 0 !important;
         text-align: center;
 
     }

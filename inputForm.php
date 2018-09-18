@@ -10,10 +10,13 @@
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $to = "mugikhan@gmail.com";
+    $to = "info@rugsafrica.co.za";
+
+    mail($to, $userSubject, $userMessage, $headers);
+    header("Location: index.html");
 
     /*Recaptcha code from http://makingspidersense.com/tutorials/tut-recaptcha.txt */
-    function post_captcha($user_response) {
+    /*function post_captcha($user_response) {
             $fields_string = '';
             $fields = array(
                 'secret' => '6Ld_U08UAAAAAJcgc5gughPwOirVhuIpRnZBeL5C',
@@ -45,7 +48,7 @@
             // If CAPTCHA is successfully completed...
             mail($to, $userSubject, $userMessage, $headers);
             header("Location: thankYou.html");
-        }
+        }*/
 ?>
 
 
