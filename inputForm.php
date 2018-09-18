@@ -1,9 +1,11 @@
 <?php
     $userName = $_POST["userName"];
+    $nameHeading = "Name: ";
+    $messageHeading = "Message: ";
     $userSubject = $_POST["userSubject"];
     $userEmail = $_POST["userEmail"];
 
-    $userMessage = nl2br("$userName \r\n" . $_POST["userMessage"]);
+    $userMessage = $nameHeading . "$userName <br />" . $messageHeading . $_POST["userMessage"];
     $userMessage = wordwrap($userMessage,70);
 
     $headers = "From: " . strip_tags($_POST["userEmail"]) . "\r\n";

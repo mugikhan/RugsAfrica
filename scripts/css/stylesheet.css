@@ -51,6 +51,10 @@ header{
         text-align: left;
     }
 
+    .nav-item a{
+        font-size: 18px;
+    }
+
     .page-links{
         font-size: 20px;
         line-height: 40px;
@@ -95,12 +99,18 @@ header{
         padding-top: 30px;
     }
 
+    .home-img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
+    }
+
     .productsRow{
         padding: 1.5rem 0 0 0;
     }
 
     #selling-points-container{
-        padding: 40px 0 20px 0;
+        padding: 20px 0 20px 0;
         text-align: center;
     }
 
@@ -142,7 +152,7 @@ header{
         text-align: center;
     }
 
-    .fa-twitter-square, .fa-facebook-square, .fa-instagram{
+    .fa-twitter-square, .fa-facebook-square, .fa-instagram, .fa-linkedin{
         margin: 0 20px 20px 0;
     }
 
@@ -250,6 +260,10 @@ header{
         text-align: left;
     }
 
+    .nav-item a{
+        font-size: 16px;
+    }
+
     .page-links{
         font-size: 20px;
         line-height: 40px;
@@ -294,12 +308,19 @@ header{
         padding-top: 90px;
     }
 
+    .home-img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
+        width: 100%;
+    }
+
     .productsRow{
         padding: 1.5rem 0 0 0;
     }
 
     #selling-points-container{
-        padding: 20px 0 20px 0;
+        padding: 0 0 20px 0;
         text-align: center;
     }
 
@@ -326,6 +347,10 @@ header{
         text-align: center;
     }
 
+    .card-title{
+        font-size: 15px;
+    }
+
     .original-price{
         color: #888;
         text-decoration: line-through;
@@ -340,7 +365,7 @@ header{
         text-align: center;
     }
 
-    .fa-twitter-square, .fa-facebook-square, .fa-instagram{
+    .fa-twitter-square, .fa-facebook-square, .fa-instagram, .fa-linkedin{
         margin: 0 20px 20px 0;
     }
 

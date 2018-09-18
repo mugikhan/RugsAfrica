@@ -59,9 +59,7 @@ $( document ).ready(function() {
         //$('.card').show();
         var filter = $(".nav-search").val(); // get the value of the input, which we filter on
         console.log(filter);
-        var text = $('.card').find(".card-title").text();
-        console.log(text.toLowerCase());
-        $('.card').find(".card-title:not(:containsi(" + filter + "))").parent().parent().css('display','none');
+        $('.card').find(".card-title:not(:containsi(" + filter + "))").parent().parent().parent().parent().css('display','none');
         //$('#HomePage').filter(".card-title:contains(" + filter + ")").parent().parent().css('display', 'none');
     });
 
