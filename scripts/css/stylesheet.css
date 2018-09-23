@@ -14,8 +14,44 @@ header{
 }
 
 @media only screen and (min-width: 601px){
-    #topRow{
-        padding: 100px 0 0 0;
+    #HomePage{
+        padding: 20px 0 0 0;
+    }
+
+    .back-to-top {
+        position: relative;
+        display: inline;
+        background: none;
+        margin: 0 auto;
+        z-index: 100;
+        text-decoration: none;
+        color: red;
+    }
+    
+    .back-to-top i {
+        position: relative;
+        color: red;
+    }
+    .back-to-top:hover{
+        color: black;
+    }
+    
+    .numberCircle {
+        border-radius: 50%;
+        width: 68px;
+        height: 68px;
+        padding: 8px;
+        background: #fff;
+        border: 2px solid red;
+        color: red;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        z-index: 100;
+        text-decoration: none;
     }
 
     #navRow{
@@ -25,6 +61,12 @@ header{
 
     #navSearchBar{
         margin: 0 !important;
+    }
+
+    .navbar-nav{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
     }
 
     .nav-search{
@@ -42,11 +84,13 @@ header{
     }
 
     .waves-input-wrapper{
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important; 
         width: 90%;
     }
 
     .nav-item{
-        padding: 0 50px 0 0;
+        padding: 0 30px 0 0;
         display: inline-block;
         text-align: left;
     }
@@ -56,7 +100,7 @@ header{
     }
 
     .page-links{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 40px;
         color: lightgrey;
     }
@@ -122,6 +166,10 @@ header{
         padding: 0 0 0 10px;
     }
 
+    .card{
+        height: 580px;
+    }
+
     .card-img-top{
         height: 300px;
         display: block;
@@ -150,6 +198,7 @@ header{
         color: red;
         margin: 0 !important;
         text-align: center;
+        padding: 0 0 10px 0;
     }
 
     .fa-twitter-square, .fa-facebook-square, .fa-instagram, .fa-linkedin{
@@ -216,8 +265,44 @@ header{
 
 @media only screen and (max-width: 601px){
 
-    #topRow{
-        padding: 100px 0 0 0;
+    #HomePage{
+        padding: 20px 0 0 0;
+    }
+
+    .back-to-top {
+        position: relative;
+        display: inline;
+        background: none;
+        margin: 0 auto;
+        z-index: 100;
+        text-decoration: none;
+        color: red;
+    }
+    
+    .back-to-top i {
+        position: relative;
+        color: red;
+    }
+    .back-to-top:hover{
+        color: black;
+    }
+    
+    .numberCircle {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        padding: 5px;
+        background: #fff;
+        border: 2px solid red;
+        color: red;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        z-index: 100;
+        text-decoration: none;
     }
 
     #navRow{
@@ -332,6 +417,10 @@ header{
         padding: 0 0 0 10px;
     }
 
+    .card{
+        height: 550px;
+    }
+
     .card-img-top{
         height: 200px;
         display: block !important;
@@ -356,13 +445,18 @@ header{
         text-decoration: line-through;
         margin: 0 10px 0 0 !important;
         text-align: center;
-
     }
 
     .card-text-price{
         color: red;
         margin: 0 !important;
         text-align: center;
+        padding: 0 0 5px 0;
+        font-size: 13px;
+    }
+
+    .btn-contact{
+        font-size: 8px !important;
     }
 
     .fa-twitter-square, .fa-facebook-square, .fa-instagram, .fa-linkedin{

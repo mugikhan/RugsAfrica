@@ -70,4 +70,22 @@ $( document ).ready(function() {
         .indexOf((match[3] || "").toLowerCase()) >= 0;
     }
     });
+
+    $(".btn-contact").on('click', function(){
+        window.location.href = "contact.html";
+    });
+
+    ('.back-to-top').click(function(event) {
+        //event.preventDefault();
+        ScrollToHeading('.topOfPage');
+    });
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.numberCircle').fadeIn();
+        } else {
+            $('.numberCircle').fadeOut();
+        }
+    });
 });
